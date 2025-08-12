@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "1db3c765-e6a9-4bb4-9c3c-3c1cd280f872",
+		"name": "a2developers-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21652809"
+	},
+	"item": [
+		{
+			"name": "Get Form Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/forms"
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Adarsh\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"contact_number\":9889576243,\r\n    \"institution_name\":\"testing\",\r\n    \"requirements\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/submit-form"
+			},
+			"response": []
+		},
+		{
+			"name": "Welcome Route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
